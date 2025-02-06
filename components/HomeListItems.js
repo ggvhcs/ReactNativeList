@@ -6,7 +6,7 @@ import { Text, View, StyleSheet, Image } from "react-native";
 const HomeItem = (props) => {
   return (
     <View style={styles.row}>
-      <Image source={{ require: props.images }} style={styles.thumbnail} />
+      <Image source={{ uri: props.images }} style={styles.thumbnail} />
       <View style={styles.rightBox}>
         <Text style={styles.name}>{props.name}</Text>
         <Text style={styles.address}>{props.address}</Text>
@@ -21,12 +21,17 @@ export default HomeListScreen = () => {
       <HomeItem
         name=" Mr. Johns Conch house"
         address=" 12th Street, Neverland"
-        images="../assets/person.png"
+        images="http://hmp.me/ol5"
       />
       <HomeItem
         name=" Mr. Johns Conch house"
         address=" 12th Street, Neverland"
-        images="../assets/person.png"
+        images="http://hmp.me/ol6"
+      />
+      <HomeItem
+        name=" Mr. Nalwayas Villa"
+        address=" 11, Heights, Oceania"
+        images="http://hmp.me/ol7"
       />
     </>
   );

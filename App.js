@@ -2,7 +2,7 @@
 import { StyleSheet } from "react-native";
 import React, { Component } from "react";
 
-import HomeListItems from "./app/components/HomeListItems";
+import HomeListItems from "./components/HomeListItems";
 
 export default class App extends Component {
   render() {
